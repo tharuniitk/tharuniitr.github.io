@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Personal Website</title>
+    <link rel="stylesheet" href="style.css"> <!-- You can link your CSS file here -->
+    <style>
+        /* Basic styling for the navigation bar */
+       
+
+        nav {
+            background-color: #444;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .popup {
+    position: fixed;
+    top: 20px; /* Changed from bottom: 20px; */
+    left: 20px; /* Changed from right: 20px; */
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    max-width: 300px;
+    z-index: 9999;
+}
+.close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    cursor: pointer;
+}
+h2 {
+    margin-top: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"  >
+            <!-- Icon or logo goes here -->
+            <h5 style="width:150px">THARUN KUMAR REDDY BOLLU </h5>
+        </div>
+        <div id="welcome-msg">
+            <h1>Welcome to My Website</h1>
+        </div>
+    </header>
+    
+
+    <nav>
+        <ul>
+            <a href="index.html" id="Home">Home</a>
+            <a href="cognitive-lab.html" id="CognitiveBClLab ">CognitiveBCLab </a>
+            <a href="publications.html" id="publications">Publications</a>
+            <a href="teaching.html" d="teaching">Teaching</a>
+            <a href="resources.html" id="resources">Resources</a>
+            <a href="opportunities.html" id="Opportunities">Opportunities</a>
+            <a href="workshops.html" id="workshops">Workshops</a>
+            <a href="photos.html"  id="Photos">Photos</a>
+        </ul>
+    </nav>
+
+    <div id="popup" class="popup">
+        <span class="close-btn" onclick="closePopup()">&times;</span>
+        <h2>Open positions/Career</h2>
+        <p>Internship opportunities are available, currently looking for interns in the following positions: part-time Webapp Developer (Javascript based simulator), unreal/unity environment developers. We are looking for student interns who can excel in these areas with focus on research based development. If any of you match the areas above, please email me at <a href="mailto:tharun.reddy@ece.iitr.ac.in">tharun.reddy@ece.iitr.ac.in</a>.</p>
+    </div>
+
+    <script>
+        function closePopup() {
+            document.getElementById('popup').style.display = 'none';
+        }
+    </script>
+<div style="justify-content: center;margin-left:150px;">
+    <section id="about-me">
+        <div class="about-content">
+            <div class="text">
+                <h2>About Me</h2>
+                <p><big>I received my B.Tech (in 2013), joint M.Tech and Phd degrees (in 2020) in <a href="https://www.iitk.ac.in/ee/">Electrical Engineering</a> from the <a href="https://www.iitk.ac.in/">Indian Institute of Technology (IIT) Kanpur</a>, India. My Ph.D. thesis was titled <a href="https://drive.google.com/file/d/1HOyRPzQv4ACFscKFfPbERQ-_Db9rF44c/view">“Neural Networks based Optimal Learning and Filtering schemes for EEG Reaction-Time Prediction Brain-Computer Interfaces”</a>, and my M.Tech thesis was titled as Learning and Divergence based approaches for drowsiness detection.
+
+                </a>                    <br> <b>Research interests: </b>Machine learning, Brain Computer Interfaces,EEG Signal Processing</big></p>
+            </div>
+            <div class="image" style="justify-content: start;">
+                <img src="images/profile.jpeg" alt="Profile Image" width="250">
+            </div>
+        </div>
+    </section>
+
+    <section id="research">
+        <h2>Research</h2>
+        <div>
+            <h3>I am focusing mainly on the following areas:</h3>
+            <ul>
+                <li>Medical Devices and diagnostics</li>
+                <li>Augmented and virtual Reality</li>
+                <li>Machine learning for EEG signal processing</li>
+                <li>Event Related Potentials</li>
+                <li>Therapeutic applications of Machine Learning in Healthcare</li>
+                <li>Neuro-ergonomics</li>
+            </ul>
+        </div>
+        <!-- Add content about your research here -->
+    </section>
+    
+
+    <section id="research-experience" style="width:1100px">
+        <h2>Research Experience</h2>
+    
+    <div class="research-item">
+        <div class="box">
+            <p><b>2024 February-March :<br>
+            SERB Sponsored High-End Workshop (KARYASHALA) on "Artificial Intelligence for Human Brain Computer Interaction" The Indian Institute of Technology Roorkee, Department of Electronics and Communication Engineering is organizing a workshop titled "Artificial Intelligence for Human Brain Computer Interaction: Innovations in Machine Learning and Signal Processing for emergence of Health 5.0." The workshop is scheduled to take place from March 18, 2024 and is sponsored by the Government of India's SCIENCE & ENGINEERING RESEARCH BOARD (SERB). Please go through workshops button on homepage and attend by registering at <a href="https://forms.gle/Q97MEZq5eUXp39rf7">https://forms.gle/Q97MEZq5eUXp39rf7</a></p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b>2024 January :<br>
+            Artificial Intelligence for Human Brain Computer Interaction: Innovations in Machine Learning and Signal Processing for Emergence of Health 5.0., workshop proposal accepted, Congratulations!!</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2023 November :<br>
+            Following papers have been accepted for oral presentation from our research group at IEEE SILCON 2023, conducted by IEEE NIT SILCHAR subsection. Congratulations!!<br>
+            (a) Entropy based EEG irregularity quantification in Single-Channel SSVEP-based BCIs<br>
+            (b) Schizophrenia and Bipolar Psychosis Classification with rsfMRI Functional Connectivity Feature Fusion technique using Super Learner</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b>2023 July :<br>
+            — "Regularized Riemannian-based Intelligent System for Dementia Screening using MEG Signals " chapter got selected in the book Artificial Intelligence Enabled Signal Processing based Models for Neural Information Processing to be published by CRC Press.</p>
+        </b> </div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2023 June :<br>
+            Following papers have been accepted for oral presentation from our research group at IEEE Indiscon 2023, conducted by IEEE Mysore subsection. Congratulations!!<br>
+            (a) Automatic seizure detection employing machine learning-based late fusion techniques over behind-the-ear and the scalp EEG signals<br>
+            (b) EEG-based Reaction Time prediction with Fuzzy Common Spatial Patterns and Phase Cohesion using Deep Autoencoder based data fusion<br>
+            (c) Riemannian approach based Depression classification using Transfer Learning for MEG signals<br>
+            - Following works got selected for oral poster presentation in mbt Conference 2.0, Belgrade<br>
+            a) Neural Graph Learning with Batch Regularization for Mobile BCI Embedding Multiclass Label Prediction<br>
+            b) Multimodal Event Marker Extraction and Motion Data Processing in Mobile Brain and Body Imaging using The BeMoBIL Pipeline for mobile EEG device.</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2023 April :<br>
+            — Following book chapter is accepted and published with Intechopen EEG Control of a Robotic Wheelchair. AK Chaudhary,V Gupta,K Gaurav,TK Reddy, L Behera . IntechOpen <a href="https://www.intechopen.com/chapters/86899">https://www.intechopen.com/chapters/86899</a><br>
+            –Two research proposals have been submitted to ICMR in collaboration with AIIMS<br>
+            - Our research group IITRBCIlab took part in the ICASSP SP Cup challenge 2023, titled "Psychosis classification using rsfMRI," and made it to the top 5 on the public leaderboard.<a href="https://www.kaggle.com/competitions/psychosis-classification-with-rsfmri/leaderboard?tab=public">https://www.kaggle.com/competitions/psychosis-classification-with-rsfmri/leaderboard?tab=public</a><br>
+            - “Riemannian Deep Feature Fusion with auto-encoder for MEG Depression Classification in Smart Healthcare applications” Chapter got selected in the book entitled “Data Fusion Techniques and Applications for Smart Healthcare” to be published by Book Series Intelligent Data-Centric Systems, Elsevier.</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2022 December to 2023 February :<br>
+            — A team from our the CognitiveBCI lab, named as "SmartBCI," participated in the "GC-13: e-Prevention: Person Identification and Relapse Detection from Continuous Recordings of Biosignals" challenge at the IEEE ICASSP 2023 conference. We are pleased to announce that our team secured the 4th position on the public leaderboard .For further details, you can refer to the leaderboard, which can be found on the following website in the Track 2 section: <a href="https://robotics.ntua.gr/eprevention-sp-challenge/">https://robotics.ntua.gr/eprevention-sp-challenge/</a></p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b>2023 February :<br>
+            -Following paper is accepted and presented at NCC 2023, IIT Guwahati<br>
+            Singh, S., Gupta, V., Reddy, T.K., Behera, L. and Samanta, S., 2023, February. Meditative State Classification Using Neuronal Multi-IMF Band Power and Complexity Features. In 2023 National Conference on Communications (NCC) (pp. 1-6). IEEE.<br>
+            - Teams from our group participated in IEEE signal processing cup 2023<br>
+            Our Team EpiHunt@IITR participated in GC-2:Seizure Detection Challenge held on Feb’23 IEEE ICASSP 2023 conference. Our team scored 0 score for Task 1 and 20.02 for Task 2 combining which we came under top 5 teams.</p>
+        </b> </div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2022 September :<br>
+            - A team of students, Mr Dhanunjay Reddy, Ekansh nayak and his team had worked on ML kaggle competition at IndoML conference held in IIT Gandhinagar</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><B></p> 2022 June :<br>
+            — Three teams under my leadership and from our research group participated in BIOMAG 2021 held at Birmingham UK. The data competitions are Dementia Screening challenge, Epilepsy challenge and Ketamine in depression</p>
+            </B></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2022 May :<br>
+            - participated with Elham baradari (Iran) in the Hackathon held at Spring school for BCI. We worked on the real locked in patients ECG data and developed compact machine learning models in the 4 hour hackathon duration.<br>
+            - Faculty Initiation Grant proposal submitted by me to SRIC IIT Roorkee got accepted for funds release.<br>
+            - I delivered a keynote lecture on the topic “Assistive Robots in Brain Computer Interfaces” in the 3-day workshop "Workshop on Healthcare Robotics and Drone Applications" held from May 27 - 29, 2022 to bring together experts from both academia and industry at IIT Mandi/<br>
+            - Please visit the workshop website for: Registration/Schedule/Other information</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2022 April :<br>
+            - 2022 SATU Joint Research Scheme Co-PI Application of mine got accepted for matching grant with Taipei Medical Medical University</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2022 March :<br>
+            -I have submitted my SERB startup grant and FIG grant proposals at DST and SRIC IIT Roorkee.<br>
+            - I have delivered an institute talk at IIT Mandi on “Challenges and considerations for Machine Learning in Brain-Computer Interfaces”<br>
+            – I am an Advisory Board member of the Department of Information Technology at the Inderprastha Engineering College</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b>2022 February :<br>
+            - Dr. Tharun delivered a talk on “Advanced sensors and ML for Brain-machine interfaces" AICTE - AU - Short Term Training Programme on “Data Science Applied to Measurement and Control” organized by the Department of Instrumentation Engineering, MIT Campus, Anna University.<br>
+            - I submitted a research proposal to ICMR call on Reproducible AI in health</p>
+        </b> </div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b>2022 January :<br>
+            - I have started teaching the course ECN-614 Adaptive Signal Processing at IIT Roorkee. The target students are M.Tech and Ph.D scholars</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b></p> 2021 December :<br>
+            - Mr. Dhanunjay Reddy (sd_reddy@ece.iitr.ac.in) joined as a Ph.D student and started to work under my guidance.</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2021 November :<br>
+            - I delivered a keynote lecture on “Advanced Sensors for Brain Computer Interfaces” at the FDP on Advances in Control systems and Sensor Technologies -IIIT Pune.<br>
+            - I have taken Mr. Sanjeev K Varun as my doctoral student. He works in the area of Machine Learning and Brain Computer Interfaces. He can be reached at skumarvarun@ec.iitr.ac.in<br>
+            - Dr. Tharun and his team members Vartika Gupta, Swapnil Singh and Prof. Vipul Arora won the Neuroergonomics Grand Challenge for Passive BCI Results of competition are available at : Results</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b></p> 2021 September :<br>
+            - We submitted a research proposal to Ministry of Home Affairs on Brain Forensics</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2021 August :<br>
+            - I have joined IIT Roorkee as an Assistant Prof. I am teaching the course EC-391 Technical communication for 3rd year ECE UG students.<br>
+            - Dr. Tharun delivered a keynote lecture on “Brain Computer Interfaces” at FDP on Machine and Deep learning- opportunities in Industry and Research held at MSRIT, Bangalore.<br>
+            - I am an advisory board member of COER-ICAIA-2022 (IEEE International Conference on Artificial Intelligence and Applications)</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2020 August- 2021 March:<br>
+            International BCI Competition winner 2021 :<br>
+            - I served as the team-leader of the only three teams from India winning in three out of five tracks of the prestigious International Brain Computer Interface competition 2021<br>
+            - 1st position in microsleep detection<br>
+            - In this work as part of track-1 event, we try to decode imagined motor movements using few-shot learning<br>
+            - In this work as part of track-2 event, we try to decode micro-sleep events in drivers using transfer learning<br>
+            - In this work as part of track-5 event, we try to decode P-300 ERPs during walking<br>
+            - Special emphasis is put on accuracy of decoding and final kappa/ROC curve</p>
+        </b></div>
+    </div>
+
+    <div class="research-item">
+        <div class="box">
+            <p><b> 2020 Jun -August:<br>
+            Clinical BCI challenge for Hemi-paretic patients:<br>
+            - Implemented with Prof. Laxmidhar Behera, Prof. Vipul Arora and group for Clinical BCI challenge 2020, WCCI, Glasgow, UK. Our team i-BCI ranked no. 2 in the final score-board<br>
+            - In this work, we try to decode imagined motor movements of Hemi-paretic stroke patients<br>
+            Specific contributions are:<br>
+            - Development of non-Euclidean signal processing methods for both cross-subject and within-subject challenges<br>
+            - Special emphasis is put on accuracy of decoding and final kappa score</p>
+        </b></div>
+    </div>
+    </section>
+
+    <section id="contact-me">
+        <h2>Contact Me</h2>
+        <div>
+            <h3><b>Dr. Tharun Kumar Reddy Bollu</b></h3>
+            <ul>
+                <li>Assistant Professor</li>
+                <li>Department of Electronics and Communication Engineering</li>
+                <li>IIT Roorkee</li>
+                <li>office:+91 1332285622</li>
+                <li>Email: tharun.reddy@ece.iitr.ac.in</li>
+            </ul>
+        </div>
+    </section>
+</div>
+
+    
+    
+</body>
+<br>
+<footer>
+    <div>
+        <a href="mailto:tharun.reddy@ece.iitr.ac.in">
+            <img src="images/email.png" alt="Email" height="40" style="margin-right: 20px;" style="margin-left: 20px;">
+        </a>
+        <a href="https://github.com/tharuniitk">
+            <img src="images/github.png" alt="GitHub" height="40" style="margin-right: 20px;" style="margin-left: 20px;">
+        </a>
+        <a href="https://youtu.be/Wlwvgm3AHvc?si=Az1fvd8gYelv7g7H">
+            <img src="images/youtube.png" alt="YouTube" height="40" style="margin-right: 20px;" style="margin-left: 20px;">
+        </a>
+    </div>
+</footer>
+</html>
